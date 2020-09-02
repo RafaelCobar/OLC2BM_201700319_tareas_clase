@@ -5,3 +5,5 @@ Enunciado: Escriba un esquema de traducción dirigido por la sintaxis posfijo, p
 Para esta tarea 12 se utilizó ply en donde realizo mi analisis léxico y sintáctico, donde en cada uno de las producciones obtengo su atributo sintetizado ya sea generando un nuevo cuando se realizan operaciones o solo obteniendo el id. 
 
 En el archivo parser.py obtengo el ast que me genera la gramatica y recorro el ast en recorrido postorden para luego solo imprimir el código de C3D
+
+Nota: Se arreglo el error cuando en la gramatica viene un caracter desconocido, es decir un error lexico (token desconocido)

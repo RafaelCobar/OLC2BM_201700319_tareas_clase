@@ -22,8 +22,14 @@ def t_Id(t):
     r'[a-zA-Z_][a-zA-Z0-9_]*'
     return t
 
+def t_error(t):
+    print("Error Léxico, Caracter invalido '%s'" % t.value[0])
+    t.lexer.skip(1)
+
 #Caracteres ignorados
 t_ignore = " \t"
+
+
 
 import ply.lex as lex
 lexer = lex.lex()

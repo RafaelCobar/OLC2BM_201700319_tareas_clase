@@ -18,6 +18,6 @@ def recorrerAST(nodo):
         return (temporal, izqC3D + derC3D + "\n"+temporal+" = "+izqTMP + " "+signo+" "+derTMP)
 
 
-ast = g.parse("a+b*c/d+g*j")
+ast = g.parse("a+b*c/d+g*a")
 tmp, c3d = recorrerAST(ast)
 print(c3d)
